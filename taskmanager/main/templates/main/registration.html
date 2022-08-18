@@ -1,0 +1,41 @@
+{% extends 'main/base.html' %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+    <script src="{% static 'js/script.js' %}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+    Регистрация
+{% endblock %}
+
+{% block body %}
+<main>
+        <div class="circle"></div>
+        <div class="register-form-container">
+            <h1 class="form-title">
+                Регистрация
+            </h1>
+            <div class="form-fields">
+                <div class="form-field">
+                    <input type="text" placeholder="Mail">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Password">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Repeat Password">
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button class="button">Registration</button>
+                <div class="divider">Уже зарегистрированы?</div>
+                <a href="#" class="button">Войдите.</a>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
